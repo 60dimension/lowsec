@@ -1,0 +1,3 @@
+#parse ("/public/header.vm")
+        explanation of attack and protection
+#parse ("/public/footer.vm")

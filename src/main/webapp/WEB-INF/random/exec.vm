@@ -1,0 +1,3 @@
+#parse ("/public/header.vm" )
+<p>Crack the third random number：$exec</p>
+#parse ("/public/footer.vm" )

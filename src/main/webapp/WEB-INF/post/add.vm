@@ -1,0 +1,22 @@
+#parse ("/public/header.vm" )
+<table>
+    <form action="/post/insert" method="POST">
+        <tr>
+            <td>Tile</td>
+            <td><input size="50mm" type="text" name="title"></td>
+        </tr>
+        <tr>
+            <td>Text</td>
+            <td><textarea style="height: 50mm;width: 100mm" name="content"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            #if($username)
+                <td><input type="submit" value="发帖"></td>
+            #else
+                <td>Not logged in yet</td>
+            #end
+        </tr>
+    </form>
+</table>
+#parse ("/public/footer.vm" )

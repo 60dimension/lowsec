@@ -1,0 +1,9 @@
+#parse ("/public/header.vm" )
+<table>
+    <form action="/ssrf/parse" method="post" enctype="multipart/form-data">
+        需要请求的uri:
+        <input type="text" name="uri"  />
+        <input type="submit" value="submit" />
+    </form>
+</table>
+#parse ("/public/footer.vm" )

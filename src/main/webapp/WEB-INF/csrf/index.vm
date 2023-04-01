@@ -1,0 +1,10 @@
+#parse ("/public/header.vm")
+<table width="100%">
+    <tr>
+
+        <td>
+            All interfaces on this site contain a csrf vulnerability. To exploit this vulnerability, another attack service needs to be built. Please refer to the introduce.
+        </td>
+    </tr>
+</table>
+#parse ("/public/footer.vm")

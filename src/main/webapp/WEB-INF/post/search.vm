@@ -1,0 +1,27 @@
+#parse ("/public/header.vm")
+<table width="100%">
+    <tr>
+        <td width="50%"><a href="/post/add"><b>Post</b></a></td>
+        <td>
+            <form action="/post/search" method="post">
+                <input type="text" name="search">
+                <input type="submit" value="search">
+            </form>
+        </td>
+    </tr>
+</table>
+<table width="100%">
+    <tr>
+        <td width="60%">Title</td>
+        <td width="20%">Author</td>
+        <td width="20%">Time</td>
+    </tr>
+    #foreach ($key in $post)
+        <tr>
+            <td><a href="/repost/index?pid=$key.pid">$key.title</a></td>
+            <td>$key.username</td>
+            <td>$key.date</td>
+        </tr>
+    #end
+</table>
+#parse ("/public/footer.vm" )

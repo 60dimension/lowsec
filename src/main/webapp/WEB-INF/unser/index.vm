@@ -1,0 +1,10 @@
+#parse ("/public/header.vm" )
+<table>
+    <form action="/unser/exec" method="post" datatype="text">
+        Enter the serialized code<br>
+        <textarea  rows="10" cols="40"  name="exec"  ></textarea>
+
+        <input type="submit" value="submit" />
+    </form>
+</table>
+#parse ("/public/footer.vm")

@@ -1,0 +1,47 @@
+#main 
+{
+	float:left;
+	width:100%;
+}
+
+#main .leftbox 
+{
+	float:left;
+	width:750px;
+	height:400px;
+}
+
+#main .rightbox 
+{
+	float:right;
+	width:200px;
+	height:400px;
+	border:1px solid #000000;
+	text-align:center;
+}
+
+.tit
+ {
+	float:left;
+	width:98%;
+	height:26px;
+	background:#efefef ;
+}
+
+.tit h3
+ {
+	margin:0px;
+	padding:0px;
+	padding-left:10px;
+	width:100px;
+	line-height:26px;
+	font-size:14px;
+	}
+
+.content 
+{
+	float:left;
+	width:98% !important;
+	width:100%;
+	border:1px solid #000000;
+}

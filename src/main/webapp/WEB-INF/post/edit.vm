@@ -1,0 +1,20 @@
+#parse ("/public/header.vm" )
+<table>
+    #foreach ($v in $post)
+    <form action="/post/update?pid=$v.pid" method="POST">
+        <tr>
+            <td>Title</td>
+            <td><input size="50mm" type="text" name="title" value="$v.title"></td>
+        </tr>
+        <tr>
+            <td>Text</td>
+            <td><textarea style="height: 50mm;width: 100mm" name="content">$v.content</textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="修改"></td>
+        </tr>
+    </form>
+    #end
+</table>
+#parse ("/public/footer.vm" )

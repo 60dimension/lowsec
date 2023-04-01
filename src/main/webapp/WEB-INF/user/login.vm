@@ -1,0 +1,10 @@
+#parse ("/public/header.vm" )
+<div id="main">
+        <h3>User LogIn</h3>
+            <form action="/user/auth" method="POST">
+                username:<input type="text" name="username"><br>
+                password:<input type="password" name="password"><br>
+                <input type="submit" value="LogIn">
+            </form>
+    </div>
+#parse ("/public/footer.vm" )

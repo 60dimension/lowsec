@@ -1,0 +1,18 @@
+#parse ("/public/header.vm" )
+<table>
+    <form action="/repost/insert?pid=${pid}" method="POST">
+        <tr>
+            <td>Text</td>
+            <td><textarea style="height: 50mm;width: 100mm" name="content"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            #if($username)
+                <td><input type="submit" value="Comments"></td>
+            #else
+                <td>Not logged in yet</td>
+            #end
+        </tr>
+    </form>
+</table>
+#parse ("/public/footer.vm" )

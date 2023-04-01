@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+    <select id="selectuser"  resultType="com.seckeep.models.Muser">
+        select * from user WHERE uid=${uid}
+    </select>
+    <select id="find" resultType="com.seckeep.models.Muser">
+        select username from user where username='${username}'
+    </select>
+    <select id="login" resultType="com.seckeep.models.Muser">
+        select username,uid from user where username='${username}' and password='${password}'
+
+    </select>
+    <insert id="insertuser" parameterType="com.seckeep.models.Muser">
+        INSERT INTO USER(`username`, `password`) VALUES('${username}', '${password}')
+        <selectKey resultType="int" keyProperty="uid">
+        select LAST_INSERT_ID() as value
+        </selectKey>
+    </insert>
+</mapper>

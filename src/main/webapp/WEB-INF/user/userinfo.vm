@@ -1,0 +1,19 @@
+#parse ("/public/header.vm" )
+<div id="main">
+    <h3>User Info</h3>
+    <table width="100%" >
+        <tr>
+            <td>Uid</td>
+            <td>username</td>
+            <td>Password</td>
+        </tr>
+        #foreach($v in $userinfo)
+            <tr>
+                <td width="10%">$v.uid</td>
+                <td width="10%">$v.username</td>
+                <td>$v.password</td>
+            </tr>
+        #end
+    </table>
+</div>
+#parse ("/public/footer.vm")

@@ -1,0 +1,8 @@
+#parse ("/public/header.vm" )
+<table>
+    <form action="/upshell/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" value="UploadFile" />
+    </form>
+</table>
+#parse ("/public/footer.vm" )

@@ -1,0 +1,9 @@
+#parse ("/public/header.vm" )
+<table>
+    <form action="/command/exec" method="post" enctype="multipart/form-data">
+        Address that need to ping
+        <input type="text" name="addr"  />
+        <input type="submit" value="提交" />
+    </form>
+</table>
+#parse ("/public/footer.vm")

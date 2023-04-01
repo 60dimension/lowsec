@@ -1,0 +1,3 @@
+#parse ("/public/header.vm" )
+<p>$upload</p>
+#parse ("/public/footer.vm" )

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>java spring mybatis velocity</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="/res/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="/res/css/footer.css" />
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header">
+				<!--<div id="logo">
+					<img src="/res/images/logo.png"/>
+				</div>-->
+
+				<div id="banner">
+					<h1>60dimension attack and protection (for java spring)</h1>
+				</div>
+				#if($username)
+                    <div id="tool">
+                        <div id="tuichu"><a href="/user/logout">Exit</a></div>
+                    </div>
+				#else
+                    <div id="tool">
+                        <div id="denglu"><a href="/user/login">login</a></div>
+                        <div id="zhuce"><a href="/user/reg">register</a></div>
+                    </div>
+				#end
+
+				<div class="nav"> </div>
+				<div id="menu">
+					<ul>
+						<li><a href="/index">SqlInject/XSS</a></li>
+						<li class="tiao"></li>
+						<li><a href="/csrf/index">CSRF</a></li>
+						<li class="tiao"></li>
+						<li><a href="/upshell/index">Shell</a></li>
+						<li class="tiao"></li>
+						<li><a href="/xxe/index">XXE</a></li>
+						<li class="tiao"></li>
+						<li><a href="/ssrf/index">SSRF</a></li>
+						<li class="tiao"></li>
+						<li><a href="/command/index">CommandExecut</a></li>
+						<li class="tiao"></li>
+						<li><a href="/unser/index">Deserialization</a></li>
+						<li class="tiao"></li>
+						<li><a href="/random/index">PseudoRandom</a></li>
+						<li class="tiao"></li>
+						<li><a href="/note/index">Introduce</a></li>
+						<li class="tiao"></li>
+						#if($username)
+                            <li ><a href="/userinfo?uid=$!{uid}" style="color:blue" >$!{username}</a></li>
+						#end
+					</ul>
+				</div>
+			</div>
+			<div class="nav"> </div>

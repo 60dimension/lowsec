@@ -1,0 +1,15 @@
+#parse ("/public/header.vm")
+<table width="100%">
+    <tr>
+        <td width="50%"><a href="/post/add"><b>Post</b></a></td>
+        <td>
+            <form action="/post/search" method="post">
+                <input type="text" name="search">
+                <input type="submit" value="search">
+            </form>
+        </td>
+    </tr>
+</table>
+
+ $exec
+#parse ("/public/footer.vm" )

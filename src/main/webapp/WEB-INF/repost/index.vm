@@ -1,0 +1,32 @@
+#parse ("/public/header.vm" )
+#foreach($k in $post)
+    <table width="100%" >
+        <tr>
+            <td width="10%" rowspan="2" valign="top"><b style="font-size: 13pt">$k.username</b></td>
+            <td valign="top"><b style="font-size: 13pt">$k.title</b></td>
+        </tr>
+        <tr>
+            <td>$k.content</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="/post/edit?pid=$k.pid">Modify</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/post/del?pid=$k.pid">Delete</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/repost/add?pid=$k.pid">Commends</a>
+            </td>
+        </tr>
+    </table>
+#end
+评论:<br>
+<table width="100%" >
+#foreach($v in $repostList)
+    <tr>
+        <td width="10%">$v.username</td>
+        <td>$v.content</td>
+    </tr>
+#end
+</table>
+#parse ("/public/footer.vm" )
