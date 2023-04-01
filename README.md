@@ -36,4 +36,4 @@ Install:
 
 05: Security code
 
-Updating
+Updating, pleas wait!
