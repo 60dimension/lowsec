@@ -8,7 +8,7 @@ XSS、SQL inject、ShellUpload、SSRF、CSRF、XXE、CommandExecute、Deserializ
 Install:
 
 1. Download source code:
-   Git clone https://github.com/60dimension/seckeep.git.
+   Git clone https://github.com/60dimension/lowsec.git.
 
 2. Configure MySQL database:
    Create a database instance and import the table file: ./lowsec/tools/seckeep.sql.
