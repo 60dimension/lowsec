@@ -1,4 +1,4 @@
-# Attack and defense practices platform (for Java spring)
+# Lowsec
 
 ## Supported vulnerability types:
 
