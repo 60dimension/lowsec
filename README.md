@@ -11,10 +11,10 @@ XSS、SQL inject、ShellUpload、SSRF、CSRF、XXE、CommandExecute、Deserializ
    Git clone https://github.com/60dimension/lowsec.git.
 
 2. Configure MySQL database:
-   Create a database instance and import the table file: ./lowsec/tools/seckeep.sql.
+   Create a database instance and import the table file: `./lowsec/tools/seckeep.sql`.
 
 3. Connect to the database:
-   Edit the ./lowsec/src/main/resources/config/mysql.xml file; set the username and password of MySQL.
+   Edit the `./lowsec/src/main/resources/config/mysql.xml` file; set the username and password of MySQL.
 
 4. Launch project:
    Find the Maven panel in the main interface of the IntelliJ IDE -- Plugins -- tomcat7, and run Double click to launch.
